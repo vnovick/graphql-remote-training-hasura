@@ -103,7 +103,7 @@ function (user, context, callback) {
   request.post({
       headers: {'content-type' : 'application/json', 'x-hasura-admin-secret': admin_secret},
       url:   url,
-      body:    `{\"query\":\"mutation($userId: String!, $nickname: String) {\\n          insert_users(\\n            objects: [{ id: $userId, name: $nickname }]\\n            on_conflict: {\\n              constraint: users_pkey\\n              update_columns: [last_seen, name]\\n            }\\n          ) {\\n            affected_rows\\n          }\\n        }\",\"variables\":{\"userId\":\"${userId}\",\"name\":\"${nickname}\"}}`
+      body:    `{\"query\":\"mutation($userId: String!, $nickname: String) {\\n          insert_users(\\n            objects: [{ id: $userId, name: $nickname }]) {\\n            affected_rows\\n          }\\n        }\",\"variables\":{\"userId\":\"${userId}\",\"name\":\"${nickname}\"}}`
   }, function(error, response, body){
        console.log(body);
        callback(null, user, context);
@@ -134,3 +134,22 @@ Add this:
 - Copy `__raw` key (this is your JWT token)
 - Now you can go to Hasura Console and add the following field
 `Authentication` and value will be `Bearer [token]` where `[token]` is your Auth0 JWT token
+
+
+
+# Excercise 5 - Permissions
+
+- Head to Hasura console and add `anonymous` role.
+- Add `HASURA_GRAPHQL_UNAUTHORIZED_ROLE` specifying which role will be used as `anonymous`
+- Set permissions for `anonymous` role to view only published blog posts.
+- Set a user group `user` and allow users to see only their own or public blog posts
+- Set insert permissions. Whenever a new blog post is inserted get userId from JWT token and insert it
+
+
+# Homework Bonus:
+Business logic techniques
+- Write your own syncronous validation resolver that will trigger Hasura mutation whenever validation succeeds.
+
+
+
+
