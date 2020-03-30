@@ -151,5 +151,13 @@ Business logic techniques
 - Write your own syncronous validation resolver that will trigger Hasura mutation whenever validation succeeds.
 
 
+# Resources
+
+[Learn Tutorials](learn.hasura.io)
+[@VladimirNovick](https://twitter.com/VladimirNovick)
+[vnovick.com](https://vnovick.com)
+
+
+
 
 
