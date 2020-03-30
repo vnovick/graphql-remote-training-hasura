@@ -57,10 +57,10 @@ create view "publicPosts" as SELECT * from posts where is_published = true;
 > Note: an app in codesandbox will fail. It's ok for now.
 
 #### Set up Auth0
-Set up Auth0 account and go to [Dashboard](https://manage.auth0.com/).
-Create a new tenant.
-Click on the Applications menu option on the left and then click the + Create Application button.
-In the Create Application window, set a name for your application and select Single Page Web Applications. 
+- Set up Auth0 account and go to [Dashboard](https://manage.auth0.com/).
+- Create a new tenant.
+- Click on the Applications menu option on the left and then click the + Create Application button.
+- In the Create Application window, set a name for your application and select Single Page Web Applications. 
 
 #### Create Auth0 App
 
