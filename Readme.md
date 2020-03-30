@@ -156,7 +156,9 @@ Business logic techniques
 - [Learn Tutorials](learn.hasura.io)
 - [@VladimirNovick](https://twitter.com/VladimirNovick)
 - [vnovick.com](https://vnovick.com)
-
+- [Blog](https://dev.to/vladimirnovick)
+- [Youtube](https://youtube.com/c/vladimirnovickdev)
+- [Twitch](https://twitch.tv/vnovick)
 
 
 
