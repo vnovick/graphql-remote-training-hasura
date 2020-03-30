@@ -159,6 +159,7 @@ Business logic techniques
 - [Blog](https://dev.to/vladimirnovick)
 - [Youtube](https://youtube.com/c/vladimirnovickdev)
 - [Twitch](https://twitch.tv/vnovick)
+- [RemoteTechTalks](https://remotetechtalks.com)
 
 
 
