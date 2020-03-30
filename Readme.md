@@ -20,7 +20,7 @@ In this excercise we will explore how to set Hasura app, explore console and aut
   - Head to [hasura.io](https://hasura.io) and click on Get started with Heroku
   - Click on "Deploy to Heroku" button to deploy engine along with PostgreSQL addon
 - Create blogs api
-  - create `posts` table with `title`, `content`, `date`, `user_id` fields
+  - create `posts` table with `title`, `content`, `timestamp`, `user_id` fields
   - create `users` table with `name` field. (id should be `Text` type)
   - create relationships between these tables. 
 - Connect frontend
