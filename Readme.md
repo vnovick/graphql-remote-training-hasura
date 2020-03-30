@@ -111,7 +111,7 @@ function (user, context, callback) {
 }
 ```
 
-- Clone `https://github.com/auth0-samples/auth0-react-samples/tree/master/01-Login`
+- Clone `https://github.com/auth0-samples/auth0-react-samples`
 - Change `auth_config.json.example` to `auth_config.json` and put there your DOMAIN and CLIENT_ID from Auth0 Dashboard
 - Go to `Profile.js` and change 
 
