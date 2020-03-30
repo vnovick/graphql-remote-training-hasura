@@ -46,4 +46,7 @@ create view "publicPosts" as SELECT * from posts where is_published = true;
 - Go to Event triggers tab and click on Glitch event trigger sample. 
 - Deploy this event trigger to Glitch
 - Add an Event trigger `insert_user_echo` to trigger Glitch webhook.
-- Add one of your previous lesson example servers as a remote schema.
+- Add one of your previous lesson example servers as a remote schema. (or add https://graphql-bootcamp-swapi.herokuapp.com/
+)
+
+**Homework Bonus:** Add an event trigger for new posts insert to filter out bad words https://github.com/vnovick/bad-words-lambda/blob/master/index.js
