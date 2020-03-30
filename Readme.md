@@ -45,7 +45,8 @@ create view "publicPosts" as SELECT * from posts where is_published = true;
 
 - Go to Event triggers tab and click on Glitch event trigger sample. 
 - Deploy this event trigger to Glitch
-- Add an Event trigger `insert_user_echo` to trigger Glitch webhook.
+- Add an Event trigger `insert_user_echo` to trigger and run insert user mutation to trigger Glitch webhook.
+- Check in Events tab that an event was triggered
 - Add one of your previous lesson example servers as a remote schema. (or add https://graphql-bootcamp-swapi.herokuapp.com/
 )
 
