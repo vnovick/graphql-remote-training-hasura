@@ -25,7 +25,6 @@ In this excercise we will explore how to set Hasura app, explore console and aut
   - create relationships between these tables. 
 - Connect frontend
   - Clone this [codesandbox](https://codesandbox.io/s/hasura-workshop-excercise3-5bo4g) and update it to get data from Hasura endpoint. 
-- Add one of your previous lesson example servers as a remote schema.
 
 # Excerise part 2
 
@@ -41,3 +40,10 @@ by inspecting Heroku dashboard and providing correct postgresql url to HASURA_DA
 ```
 create view "publicPosts" as SELECT * from posts where is_published = true;
 ```
+
+# Excercise part 3 - Event triggers and async flow and Remote schemas
+
+- Go to Event triggers tab and click on Glitch event trigger sample. 
+- Deploy this event trigger to Glitch
+- Add an Event trigger `insert_user_echo` to trigger Glitch webhook.
+- Add one of your previous lesson example servers as a remote schema.
